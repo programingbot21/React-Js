@@ -15,7 +15,7 @@ function App() {
    <h1 className='bg-green-500 text-black p-4 rounded-xl mb-4'>TailWind</h1>
      {/* <Cards cha='coffe' myArr={myObj}/>  */}
      <Cards username='Vite and React'/>
-     <Cards username='JavaScript'/>
+     <Cards username='JavaScriptcd'/>
     </>
   )
 }

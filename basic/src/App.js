@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import Test from "./Test";
+
 function App() {
     const username = {name: 'kunal',age: 38}
     let [counter, setCounter] = useState(15)
@@ -7,8 +8,12 @@ function App() {
     // let counter = 15;
     const addValue = () =>{
       console.log("click", counter )
-      counter = counter + 1;
-      setCounter(counter)
+      // counter = counter + 1;
+       setCounter(counter)
+       setCounter((preCon) => preCon + 1)
+       setCounter((preCon) => preCon + 1)
+       setCounter((preCon) => preCon + 1)
+       setCounter((preCon) => preCon + 1)
     }
     const removeVal = () =>{
       setCounter(counter-1)
