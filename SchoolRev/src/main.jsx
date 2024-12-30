@@ -4,6 +4,7 @@ import './index.css'
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
 import Layout from './Layout'
 import About from './components/About/About'
+// import DataFecthCom from './DataFecthCom'
 // import App from './App.jsx'
  
 const router = createBrowserRouter([
@@ -11,9 +12,10 @@ const router = createBrowserRouter([
     path: '/',
     element: <Layout/>,
     children: [
+       
       {
-        path: 'about',
-        element: <About/>
+         path: 'about',
+         element:<About/>
       }
     ]
   }
