@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 function TextForm(props) {
     const [text, setText] = useState('rerghfhgf')
+    // const [deltext, setDeltext] = useState(text)
     const handleUpClick = () =>{
         let newtext = text.toUpperCase();
         setText(newtext)
@@ -12,8 +13,14 @@ function TextForm(props) {
         setText(event.target.value)
     }
 
+    const handleDelete = () =>{
+      let newtext = "";
+      setText(newtext)
+      
+  }
+
   return (
-    
+    <>
     <div >
   <h1>{props.heading}</h1>
   <div className="mb-3  ">
@@ -22,9 +29,20 @@ function TextForm(props) {
 
   </div>
   <button className='btn btn-primary ' onClick={handleUpClick}>button</button>
+  
+<button className='btn btn-primary ' onClick={handleDelete} >Delete</button>
+    
+    
+  
+  
+</div>
+<div className='container my-3'>
+    <h1>Ypur test Summary</h1>
+    <p> {text.split(' ').length} words and {text.length}</p>
+    <p> { 0.008 * text.split(' ').length} Minutes Read </p>
 </div>
 
-    
+</>
   )
 }
 
