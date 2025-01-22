@@ -1,10 +1,19 @@
+
 import React from 'react'
+import Sli from '../Sli/Sli'
+
 
 function Home() {
   return (
-    <div>
+    <div className='mt-1 pt-1'>
+
+    <div className=''>
+    <Sli autoSlide={true}/>
+    </div>
+   
+      
       <div>
-  section class="container mx-auto px-6 p-10"&gt;
+ 
   <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
     Features
   </h2>
@@ -38,6 +47,7 @@ function Home() {
 </div>
 
     </div>
+ 
   )
 }
 
